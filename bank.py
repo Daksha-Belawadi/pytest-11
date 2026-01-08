@@ -1,15 +1,18 @@
-def bank_details(Account_number,Account_holder_name,Account_type,Balance):
+def employee_details(name, emp_id, department, salary):
     result = (
-        f"Account_number:{Account_number}\n"
-        f"Account_holder_name:{Account_holder_name}\n"
-        f"Account_type:{Account_type}\n"
-        f"Balance:{Balance}\n"
+        f"Employee Name: {name}\n"
+        f"Employee ID: {emp_id}\n"
+        f"Department: {department}\n"
+        f"Salary: {salary}"
     )
     return result
 
+
 if __name__ == "__main__":
-    Account_number="515\n"
-    Account_holder_name="Daksha\n"
-    Account_type="Current\n"
-    Balance="50000\n"
-    print(bank_details("Account_number,Account_holder,Account_type,Balance"))
+    # Sample input (you can change)
+    name = "Alice"
+    emp_id = "E1001"
+    department = "IT"
+    salary = 55000
+
+    print(employee_details(name, emp_id, department,salary))
